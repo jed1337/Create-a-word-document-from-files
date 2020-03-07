@@ -87,4 +87,11 @@ fabric.properties
 # Selenium logs
 debug.log
 
+# Cache
+__pycache__/
+
+# other test files
 test files/*
+
+# Output
+*.docx
