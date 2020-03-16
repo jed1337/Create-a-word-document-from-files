@@ -36,4 +36,5 @@ def save_to_word(path_holders):
     document.save('test.docx')
 
 path = Path(r"D:\path")
-path_holders = [PathHolder(sub_path) for sub_path in path.listdir()]
+path_holders = [PathHolder(sub_path) for sub_path in path.listdir() if sub_path.isdir()]
+save_to_word(path_holders)
