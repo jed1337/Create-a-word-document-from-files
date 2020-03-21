@@ -1,9 +1,9 @@
 from docx import Document
-from django.shortcuts import HttpResponse
+from django.shortcuts import HttpResponse, render
 
 
 def index(request):
-    return HttpResponse('Hello world')
+    return render(request, 'create_a_release_document/index.html', {})
 
 
 def test(request, data):
